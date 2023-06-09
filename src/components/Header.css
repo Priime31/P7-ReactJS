@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header{
+    display: flex;
+    width: 1240px;
+    height: 68px;
+    margin-inline: 100px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+ul>li{
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #FF6060; 
+}
+.active{
+    text-decoration: underline;
+    color: #FF6060;
+}
+a{
+    color: #FF6060;
+    text-decoration: none;
+}

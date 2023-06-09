@@ -1,0 +1,16 @@
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer>img{
+    filter: contrast(0) brightness(2);
+    margin-inline: auto;
+    margin-top: 40px;
+}
+footer>p{
+    color: white;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
