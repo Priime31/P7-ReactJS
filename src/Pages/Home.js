@@ -1,12 +1,13 @@
 import React from 'react';
-import Banner from '../components/Banner';
+import Banner from '../components/Banner/Banner';
 import HomeBanner from '../assets/HomeBanner.png';
-import Card from '../components/Card';
 import lodgingList from '../assets/lodging.json';
+import Card from '../components/Card/Card';
 
-import './Home.css';
+import './Home.scss';
  
 const Home = () => {
+
     return (
         <div className='Home'>
 
@@ -14,7 +15,7 @@ const Home = () => {
 
             <div className='cardWrap'>
                 {lodgingList.map((lodging, index) => (
-                    <Card key={index} cover={lodging.cover} title={lodging.title}/>
+                    <Card key={index} lodgingId={lodging.id} cover={lodging.cover} title={lodging.title}/>
                 ))}
             </div>
 

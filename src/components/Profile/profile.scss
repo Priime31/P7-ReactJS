@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.profileBlock{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6060;
+    justify-content: right;
+    margin-bottom: 27px;
+    & p{
+        width: 80px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    & img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}

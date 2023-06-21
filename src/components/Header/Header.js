@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <img src={require('../assets/LOGO.png')} alt='Logo du site Kasa'/> 
+            <img src={require('@/assets/LOGO.png')} alt='Logo du site Kasa'/> 
             <ul>
                 <li><NavLink 
                     to='/Home'
