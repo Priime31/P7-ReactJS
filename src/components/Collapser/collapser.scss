@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@keyframes midRotate{
-    from{
-        transform: rotate(0deg)
-    }
-
-    to{
-        transform: rotate(180deg);
-    }
-}
-
 .collapser_block{
     display: flex;
     flex-direction: column;
@@ -45,5 +35,12 @@
     flex-direction: column;
     &>li{
         list-style: none;
+    }
+}
+
+.button_style{
+    transition: transform 0.3s ease;
+    &.rotate{
+        transform: rotate(180deg);
     }
 }

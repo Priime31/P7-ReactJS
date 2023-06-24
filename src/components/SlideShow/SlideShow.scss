@@ -1,9 +1,9 @@
 .SlideShow{
     height: 415px;
-    width: 1240px;
+    width: auto;
     overflow: hidden;
     display: flex;
-    margin: auto;
+    margin-inline: 7%;
     border-radius: 25px;
     top: 128px;
     margin-bottom: 40px;
@@ -11,7 +11,7 @@
     & img {
         object-fit: cover;
         height: 415px;
-        width: 1240px;
+        width: 100%;
         position: relative;
 
     }
@@ -19,24 +19,30 @@
         display: flex;
         position: absolute;
         top: 485.67px;
-        left: 708px;
+        left: 50%;
+        transform: translate(-50%, 0);
         color: white;
         font-size: 24px;
         font-weight: 300;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
     }
-}
-
-button{
-    all: unset;
-    display: flex;
-    position: absolute;
-    &:nth-of-type(1){
-        right: 123.36px;
-        top: 330px;
-    }
-    &:nth-of-type(2){
-        left: 123.36px;
-        top: 330px;
+    &>button{
+        all: unset;
+        display: flex;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        &:nth-of-type(1){
+            right: 123.36px;
+            top: 330px;
+        }
+        &:nth-of-type(2){
+            left: 123.36px;
+            top: 330px;
+        }
     }
 }
 
@@ -47,5 +53,24 @@ button{
 .fa-chevron-right{
     color: white;
     font-size: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .SlideShow{
+        border-radius: 10px;
+        &>p{
+            top: 450px;
+        }
+        &>button{
+            &:nth-of-type(1){
+                right: 100px;
+                top: 310px;
+            }
+            &:nth-of-type(2){
+                left: 100px;
+                top: 310px;
+            }
+        }
+    }
 }
 

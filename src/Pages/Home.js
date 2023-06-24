@@ -13,7 +13,7 @@ const Home = () => {
 
             <Banner image={HomeBanner} altTxt='Falaises en bord de plage par temps brouillardeux' texte='Chez vous, partout et ailleurs'/>
 
-            <div className='cardWrap'>
+            <div className='card_wrap'>
                 {lodgingList.map((lodging, index) => (
                     <Card key={index} lodgingId={lodging.id} cover={lodging.cover} title={lodging.title}/>
                 ))}

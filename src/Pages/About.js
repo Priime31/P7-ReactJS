@@ -14,7 +14,7 @@ const About = () => {
             <div className='about_collapser_block'>
                 {
                     aboutFile.map((item) => (
-                        <Collapser title={item.title} content={item.description}/>
+                        <Collapser key={item.id}title={item.title} content={item.description}/>
                     ))
                 }
             </div>

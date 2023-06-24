@@ -11,7 +11,6 @@ const Collapser = ({ content, title }) => {
     let collapserStyle = {
         display: 'block'
     };
-    let buttonStyle = {};
     const collapserStyleChanger = () => {
         isToggled
             ? (collapserStyle = {
@@ -24,19 +23,16 @@ const Collapser = ({ content, title }) => {
 
     const handleToggle = () => {
         setIsToggled(!isToggled);
-        buttonStyle = {
-            animation: '.6s midRotate;'
-        }
     };
 
     collapserStyleChanger();
 
     return (
         <div className="collapser_block">
-            <div className="titleButton_block">
+            <div key={title.index} className="titleButton_block">
                 <p>{title}</p>
-                <button style={buttonStyle} value={isToggled} onClick={handleToggle}>
-                    <FontAwesomeIcon icon="fa-solid fa-chevron-up" />
+                <button value={isToggled} onClick={handleToggle}>
+                    <FontAwesomeIcon className={`button_style ${isToggled ? 'rotate' : ''}`} icon="fa-solid fa-chevron-up" />
                 </button>
             </div>
 

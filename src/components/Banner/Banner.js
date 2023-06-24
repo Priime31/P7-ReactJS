@@ -1,10 +1,10 @@
 import React from 'react';
 
-import "./Banner.css";
+import "./banner.scss";
 
 const Banner = ({image, altTxt, texte, mobileHeight}) => {
     return (
-        <div className={mobileHeight ? 'BannerDiv mobileHeight' : 'BannerDiv'}>
+        <div className={mobileHeight ? 'bannerDiv mobileHeight' : 'bannerDiv'}>
             <img src={image} alt={altTxt}/>
             <p>{texte}</p>
         </div>

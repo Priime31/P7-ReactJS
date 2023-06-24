@@ -1,14 +1,36 @@
 .lodging_info_block{
     display: flex;
     justify-content: space-between;
-    width: 1240px;
-    margin-inline: 100px;
+    width: auto;
+    margin-inline: 7%;
     margin-bottom: 24px;
+}
+
+.profile_main_block{
+    height: 70px;
+    margin-bottom: 23px;
+    margin-top: 23px;
 }
 
 .collapse_block{
     display: flex;
-    margin-inline: 100px;
+    margin-inline: 7%;
     justify-content: space-between;
     gap: 96px;
+}
+
+@media only screen and (max-width: 768px){
+    .lodging_info_block{
+        flex-direction: column;
+    }
+    .profile_main_block{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .collapse_block{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
